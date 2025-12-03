@@ -1,0 +1,221 @@
+/* -------Universal Styling------- */
+body {
+    margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: rgb(162, 206, 97);
+    min-height: 100vh;
+}
+
+h3 {
+	color: rgb(0, 0, 0);
+	text-align: center;
+	font-size: 30px;
+}
+
+h4 {
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-size: 45px;
+}
+
+
+/* Heading style */
+h2 {
+    padding-top: 2em;
+    background-color: rgb(19, 40, 55);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(175 45 45 / 0%);
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: 2.3em;
+    margin: 20;
+}
+
+h1 {
+    text-align: Center;
+    font-family:sans-serif;
+}
+
+/* -------Search Box Styling------- */
+.search-box {
+    background-color: rgb(242 255 244 / 70%);
+    border: 5px solid #ccc;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 30px auto;
+    width: 60%;
+    box-shadow: 0px 0px 3px 12px rgba(0, 0, 0, 0.1);
+    border-color: #001b718a;
+}
+
+/* Form elements inside the search box */
+.search-box label {
+    font-weight: bold;
+    margin-bottom: 8px; 
+}
+
+/* Text input field style */
+.search-box input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #f6f6f6;
+    width: 40%;
+}
+
+/* Radio button style */
+.substance-options {
+    margin: 10px 0;
+}
+
+.substance-options label {
+    display: inline;
+    font-weight: normal;
+}
+
+.substance-options div {
+    margin-bottom: 5px;
+}
+
+.search-box input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* Submit button style */
+.search-box button {
+    background-color: rgb(19, 40, 55);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: rgb(19, 40, 55);
+}
+
+/* -------Table Styling------- */
+table {
+	width: 100%;
+    margin: 0 auto;
+	border-collapse: collapse;
+	border:1px solid rgb(19, 40, 55);
+}
+
+th {
+	background-color: rgb(19, 40, 55);
+	color: rgb(255, 255, 255);
+	padding: 10px;
+    text-align: center;
+}
+
+td, tr {
+	padding: 10px;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+td:not(:first-child) {
+    text-align: center;
+}
+
+.spacer {
+    background-color: rgb(19, 40, 55);
+    height: fit-content;
+    border: black 1px solid;
+}
+
+tr:hover {background-color: rgb(19, 40, 55);
+		color:rgb(255, 255, 255)}
+
+.tablecontainer {
+	overflow-x: auto;
+}
+
+/* -------Navigation bars------- */
+nav{
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    left: 0;
+    z-index: 9999;
+}
+
+nav ul {
+    background:  rgb(19, 40, 55);
+	list-style-type: none;
+	margin-top: 0;
+	padding: 0;
+    display: flex;
+    align-items: center;
+    float:right;
+    width:100%;
+}
+
+
+nav li {
+	display: inline-block;
+	margin-right: 30px;
+} 
+
+nav li a {
+    font-family:sans-serif;
+    font-weight: 500;
+    font-size:18px;
+	display: inline-block;
+	color: white;
+    padding: 10px 18px;
+	text-decoration: none;
+	text-align: center;
+	padding: 14px 16px;
+}
+
+nav li a:hover {
+	color: white;
+	background-color: rgb(162, 206, 97);
+    border-radius: 5px;
+}
+
+nav .logo-text h1{
+    display: inline-block;
+    font-weight: 600;
+    font-family: sans-serif;
+    color:aliceblue;
+    margin-left:10px;
+}
+nav .logo-text b{
+    color:yellowgreen
+}
+
+nav ul.active::after{
+    content:'';
+    width: 50%;
+    height:3px;
+    background-color:white;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+
+.Purpose {
+    margin-left: 50px;
+    font-family: sans-serif;
+}
+.Purpose h3{
+    color:white;
+    font-size: 30px;
+}
+.Purpose h4{
+    font-size: 20px;
+    color:white;
+}
+
