@@ -1,9 +1,9 @@
 # CS257 - Team Project: Drug Usage in the United States
 ### Team Members: 
-Rachel Punter
-Eileen Liu
-Ayobami Bidokwu
-Tume Emmanuel Dzelamonyuy
+- Rachel Punter
+- Eileen Liu
+- Ayobami Bidokwu
+- Tume Emmanuel Dzelamonyuy
 
 ## Project Overview
 This project analyzes drug usage data across U.S. states and years. 
