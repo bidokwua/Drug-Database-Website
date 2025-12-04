@@ -1,5 +1,19 @@
-# CS257-Team Bigstackz Drug Usage in US
-Rachel, Eileen, Ayobami, Emmanuel
+# CS257-Team Project: Drug Usage in the United States
+Team Members: Rachel Punter, Eileen Liu, Ayobami Bidokwu, Tume Emmanuel Dzelamonyuy
+
+## Project Overview
+This project analyzes drug usage data across U.S. states and years. Users can search the dataset through the command line or through our Flask-based web interface.
+
+## My Contribution (Ayobami Bidokwu)
+- Migrated the project into my personal GitHub repository
+- Replaced all team database credentials with my own local database connection
+- Cleaned and organized the entire codebase, removing unused code, unnecessary comments, and outdated functions across all files
+- Assisted in running, updating, and maintaining the unit tests for the command-line functions and Flask routes
+- Added input validation to prevent crashes when users submit empty queries
+- Contributed to the CSS and overall front-end layout, including:
+    - Helping design the initial homepage
+    - Helped to the design of the results page and how the data is visually displayed to users
+- Contributed to the refactoring of HTML by supporting the move to a single data_results.html template used for all substance types
 
 ## features in Drug Usage data in US 
 - command lines:
@@ -34,13 +48,6 @@ Rachel, Eileen, Ayobami, Emmanuel
 
 ### Muddling through
 - The different pages allow users to easily click through data (data display comes up on different pages and there are different pages for how to search through the data)
-
-### Front-End Design Improvements
-- It was hard for users to go back to the homepage or the searching pages after getting the data results. We made a change to the data_results.html. Our change was adding a nav bar at the top of the page so when users see the results they can quickly navigate to another page.
-- Users could easily make a mistake a crash the website if they submitted a search without putting a year/state or selecting a drug type. We changed the search_year.html and search_state.html to check that both search requirements are filled out before the user could click the search button. This ensures that users cannot accidentally crash the website.
-- We used to have a lot of commented out code that we weren't using still in our code. This is especially true for our datasource.py file. At about line 51 (between the search by state and year functions) we had a lot of commented out functions that did not work properly. We deleted all of these comments and only left the working code and their docstrings.
--  We used to have a html page for each of the substances in our dataset. These files are now deleted but they were named "substance name".py. Most of the lines in the files were the same with minor changes. We refractored the code by making one file called data_results.html which is universal for all the substances so it can be used to display data from any substance have have the right column labels.
-
 
 
 
