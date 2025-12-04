@@ -16,16 +16,17 @@ This project analyzes drug usage data across U.S. states and years. Users can se
 - Contributed to the refactoring of HTML by supporting the move to a single data_results.html template used for all substance types
 
 ## features in Drug Usage data in US 
+### Functions Overview
 - command lines:
     <python3 command_line.py --substance "type substance" --year "chosen year">
     <python3 command_line.py --substance "type substance" --state "chosen state">
     - Those command line carry our searching data that relates to wanted variables.
-### Search_by_year
+### Search_by_year (substance, year)
 - search_by_year() is called by the command line
     <python3 command_line.py --substance "type substance" --year "chosen year">
 - argument from "chosen year" would be taken as input into this function
 - return a list of sublists consisting ['state name: state', 'year number: year', 'age Range: age', 'data: numbers' ]
-### Search_by_state
+### Search_by_state (substance, state)
 - search_by_state() is called by the command line
     <python3 command_line.py --substance "type substance" --state "chosen state">
 - argument from "chosen state" would be taken as input into this function
