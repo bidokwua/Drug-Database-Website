@@ -1,0 +1,9 @@
+cat > .gitignore << 'EOF'
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+ProductionCode/psql_config.py
+Contract_formal_ver.md
+EOFMisc/

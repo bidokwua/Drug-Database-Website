@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html> 
+
+    <head>
+        <meta charset="UTF-8">
+        <title>{{statedisplay}}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+
+    <body>
+        <section class = "navigation bar">
+        <nav>
+            <ul>
+                <div class="logo-text"><h1>SAFE<b>US</b></h1></div>
+                <li class="active"><a href='/'>🏠 Home</a></li>
+                <li><a href='/state'>🔎 Search by State</a></li>
+                <li><a href="/year">🔎 Search by Year</a></li>
+                <li><a href="/about">🗂️ About the Data</a></li>
+                
+            </ul>
+        </nav>
+        </section>
+        
+        <div><h2>Search by State and Substance</h2></div>
+        
+        <!-- Combined Search Form -->
+        <div class="search-box">
+           
+            <form onsubmit="event.preventDefault(); const state = document.getElementById('state').value; const substance = document.querySelector('input[name=\'substancechoice\']:checked').value; window.location.href = `/state/${state}/substance/${substance}`;">
+
+                <!-- State Input -->
+                <label for="state">Enter a State:</label>
+                <input type="text" id="state" name="state_name" pattern ="^[A-Za-z]+(?: [A-Za-z]+){0,2}$" placeholder="Enter a state in the US" required>
+
+                <br><br>
+
+                <!-- Substance Selection -->
+                <label>Select a Substance:</label>
+                <div class ="substance-options">
+
+                    <div>
+                        <input type="radio" id="Cocaine" name="substancechoice" value="Cocaine" required>
+                        <label for="Cocaine">Cocaine</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="Tobacco" name="substancechoice" value="Tobacco">
+                        <label for="Tobacco">Tobacco</label>
+                    </div>
+
+
+                    <div>
+                        <input type="radio" id="Marijuana" name="substancechoice" value="Marijuana">
+                        <label for ="Marijuana">Marijuana</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" id="Alcohol" name="substancechoice" value="Alcohol">
+                        <label for ="Alcohol">Alcohol</label>
+                    </div>
+
+                </div>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </body>
+</html>

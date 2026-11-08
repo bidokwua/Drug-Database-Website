@@ -1,0 +1,3 @@
+DATABASE = 'your_database_name'
+USER = 'your_username'
+PASSWORD = 'your_password'
